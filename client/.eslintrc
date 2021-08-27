@@ -1,0 +1,19 @@
+{
+  "extends": ["airbnb", "airbnb/hooks"],
+
+  "rules": {
+    "block-scoped-var": "error",
+    "default-case": "error",
+    "default-case-last": "error",
+    "eqeqeq": "error",
+    "jsx-quotes": [ "error", "prefer-double" ],
+    "react/button-has-type": ["off", {
+      "button": "false",
+      "submit": "false",
+      "reset": "false"
+    }]
+  },
+  "env": {
+    "browser": true
+  }
+}
