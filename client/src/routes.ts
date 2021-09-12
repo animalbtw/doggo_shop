@@ -1,5 +1,5 @@
-import Admin from "./Pages/Admin";
 import {ADMIN_ROUTE, BASKET_ROUTE, FEED_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE} from "./Utils/consts";
+import Admin from "./Pages/Admin";
 import Basket from "./Pages/Basket";
 import Shop from "./Pages/Shop";
 import Auth from "./Pages/Auth";
