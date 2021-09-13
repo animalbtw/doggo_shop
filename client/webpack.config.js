@@ -7,7 +7,7 @@ module.exports = {
   devtool: 'inline-source-map',
   mode: process.env.NODE_ENV || "development",
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx", ".css"],
     alias: {
       style: path.resolve(__dirname, 'src', 'assets', 'styles')
     }
@@ -19,9 +19,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|tsx)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ["babel-loader", "ts-loader"],
+        use: ["babel-loader"],
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: ["ts-loader"],
       },
       {
         test: /\.css$/i,
@@ -48,6 +53,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "src", "index.html"),
-    }),
+    })
   ],
 };
