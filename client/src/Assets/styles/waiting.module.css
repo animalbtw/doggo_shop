@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12%;
+}
+
+.header {
+    font-family: Montserrat-Thin, serif;
+    font-size: 64px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 20px;
+}
+
+.substring {
+
+}
+
+.time {
+    font-size: 64px;
+}

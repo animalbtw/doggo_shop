@@ -1,4 +1,5 @@
 import * as React from 'react';
+import st from '../Assets/styles/waiting.module.css'
 
 const WaitingComp: React.FC = () => {
     const [date, setDate] = React.useState<any>()
@@ -25,28 +26,36 @@ const WaitingComp: React.FC = () => {
     }, [])
 
     return (
-        <div>
-            Start in:
+        <div className={st.wrapper}>
+            <div className={st.header}>
+                Starts in:
+            </div>
             {
                 isReady ? (
-                    <div>
-                        <div>
-                            days:
-                            {
-                                date.days
-                            }
+                    <div className={st.timer}>
+                        <div className={st.date}>
+                            <div className={st.substring}>
+                                days
+                            </div>
+                            <div className={st.time}>
+                                {date.days}
+                            </div>
                         </div>
-                        <div>
-                            hours:
-                            {
-                                date.hours
-                            }
+                        <div className={st.date}>
+                            <div className={st.substring}>
+                                hours
+                            </div>
+                            <div className={st.time}>
+                                {date.hours}
+                            </div>
                         </div>
-                        <div>
-                            minutes:
-                            {
-                                date.minutes
-                            }
+                        <div className={st.date}>
+                            <div className={st.substring}>
+                                mins
+                            </div>
+                            <div className={st.time}>
+                                {date.minutes}
+                            </div>
                         </div>
                     </div>
 
