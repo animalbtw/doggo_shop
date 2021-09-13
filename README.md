@@ -1,2 +1,2 @@
-# doggo_shop<bt/>
+# Doggo shop <bt/>
 Dog shop concept
